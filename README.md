@@ -25,14 +25,34 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
+    
+    .map() creates and populates a new array with the same number of elements as the first one, with a given function having been applied to each function. Useful for molding and shaping data, say all of the entries in a database were formatted incorrectly you could use map in order to fix it.
+
+    .filter() returns a new array with the results of a callback that runs a truth text on the array provided. If you wanted an array of users on a website that had the condition isAdmin: true, you could run this to get a list of the admins. 
+
+    .reduce() executes a reducer function callback on a given array, passing in the return value of the calculation on the previous element in the array in order to keep a sort of running tabs on it. 
 
 2. Explain the difference between a callback and a higher order function.
 
+    A callack is a function that is passed into a function as an argument, a higher order function is one that takes functions as arguments.
+
 3. Explain what a closure is.
+
+    A closure is the combination of a function and the lexical context in which it was declared. It has to do with scope and the set of variables or functions in that context that the inner function is able to reach. There is a functional scope that the function has access to. The variables or functions declares within that function have the ability to reach outward for context, but never inward. This is true no matter how deeply nested a function is.
 
 4. Describe the four principles of the 'this' keyword.
 
+    Global binding is an error in which 'this' is declared and grabs on to the window / console object. Undefined if in strict mode.
+
+    Implicit binding, whenever a function is called by a preceding dot, the object left of the dot gets 'this'.
+
+    New binding, constructor functions, whenever a constructor function is used this refers to the specific instance of an object that is created and returned.
+
+    Explicit binding, where .bind, .call, and .apply explicitly apply this.
+
 5. Why do we need super() in an extended class?
+
+    Super allows you to access functions on an object's parent.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
