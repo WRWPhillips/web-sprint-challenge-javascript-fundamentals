@@ -28,7 +28,7 @@ myFunction();
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
 function summation(n) {
-  //I've known about a way to do this for a long time
+  //I've known about a way to do this for a long time, the sum of the whole numbers within a given number is equal to the expression below.
   let sum = (n / 2) * (n + 1);
   return sum;
   }
@@ -129,8 +129,8 @@ function multiply(a, b){
 
  // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
   
-function greeting(a, b){
-   return `Hello ${a} ${b}, nice to meet you!`
+function greeting(first, last){
+   return `Hello ${first} ${last}, nice to meet you!`
   }
   
   
